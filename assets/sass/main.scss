@@ -110,7 +110,7 @@
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: bold; 
 		line-height: 1.75em;
 		color: #888;
 
@@ -128,7 +128,7 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.4em;
 		color: #888;
 	}
 
@@ -530,6 +530,7 @@
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			font-weight: bold;
 
 			h3 {
 				font-size: 1em;
@@ -826,7 +827,14 @@
 			}
 
 	}
-
+	.academic-background {
+		text-align: left;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 19pt;
+		line-height: 1.75em;
+		color: #888;
+	}
+	
 /* Narrow */
 
 	@include breakpoint('narrow') {
