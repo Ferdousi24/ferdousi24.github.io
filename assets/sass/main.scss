@@ -107,12 +107,12 @@
 		}
 
 	body {
-		background: #fff;
+		background: #0e0d0d;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: bold; 
 		line-height: 1.75em;
-		color: #888;
+		color: #131010;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -129,12 +129,12 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.4em;
-		color: #888;
+		color: #0a0909;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #181414;
 		line-height: 1.5em;
 	}
 
@@ -232,6 +232,8 @@
 /* Container */
 
 	.container {
+		background-color: #000; // Black background
+        color: #fff; // White text
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
@@ -465,7 +467,7 @@
 		tbody {
 			tr {
 				&:nth-child(2n+2) {
-					background: #f4f4f4;
+					background: #0a0a0a;
 				}
 			}
 		}
@@ -731,7 +733,7 @@
 			background-image: url('images/overlay.png');
 
 			&.dark {
-				color: #ddd;
+				color: #161313;
 				color: rgba(255, 255, 255, 0.75);
 
 				h2, h3, h4, h5, h6 {
@@ -1027,7 +1029,7 @@
 					&:before {
 						text-decoration: none;
 						content: '\f0c9';
-						color: #fff;
+						color: #161212;
 						font-size: 18px;
 						background: rgba(128, 136, 144, 0.5);
 						border-radius: 0.35em;

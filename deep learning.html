@@ -4,42 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Description</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        p {
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Project Description</h1>
-    <p> As part of my internship in the Department of Geography, Environment, and Geomatics at the University of Ottawa, I worked on a project using the U-Net architecture for binary image segmentation. This deep learning model was employed to differentiate squirrel images based on color, specifically focusing on black and brown color variants.</p>
-    
-    <h2>Key Highlights:</h2>
-    <ul>
-        <li>Dataset Preparation and Preprocessing:
-            <ul>
-                <li>Data Collection: Collected 500 images of squirrels.</li>
-                <li>
-                    <p>Masking: Applied masking techniques using OpenCV to create binary masks for the images. This involved using threshold values to segment the squirrels from the background.</p>
-                </li>
-                <li>
-                    <p>Preprocessing: Conducted preprocessing steps to enhance the dataset quality. This included resizing images to a consistent size, normalizing pixel values, and augmenting data to improve model robustness.</p>
-                </li>
-            </ul>
-        </li>
+    <div class="container">
+        <h1>Project Description</h1>
+        <p>As part of my internship in the Department of Geography, Environment, and Geomatics at the University of Ottawa, I worked on a project using the U-Net architecture for binary image segmentation. This deep learning model was employed to differentiate squirrel images based on color, specifically focusing on black and brown color variants.</p>
         
-        <li>Model Implementation:
-            <ul>
-                <li>Utilized the U-Net architecture to develop a model that accurately identifies and segments squirrels across various backgrounds.</li>
-            </ul>
-        </li>
+        <h2>Key Highlights:</h2>
+        <ul>
+        </h2> Dataset Preparation and Preprocessing </h2>:
+                <ul>
+                    <li>Data Collection: Collected 500 images of squirrels.</li>
+                    <li>Masking: Applied masking techniques using OpenCV to create binary masks for the images. This involved using threshold values to segment the squirrels from the background.</li>
+                    <li>Preprocessing: Conducted preprocessing steps to enhance the dataset quality. This included resizing images to a consistent size, normalizing pixel values, and augmenting data to improve model robustness.</li>
+                </ul>
+            </li>
         
-        <li>Segmentation:
-            <ul>
-                <li>
-                    <p>Loss Function: Used an appropriate loss function for binary segmentation, such as binary cross-entropy.</p>
-                </li>
-                <li>
-                    <p>Evaluation: Monitored performance metrics like accuracy and Intersection over Union (IoU) to assess the model's effectiveness.</p>
-                </li>
-            </ul>
-        </li>
+            <li>Model Implementation:
+                <ul>
+                    <li>Utilized the U-Net architecture to develop a model that accurately identifies and segments squirrels across various backgrounds.</li>
+                </ul>
+            </li>
         
-    
+            <li>Segmentation:
+                <ul>
+                    <li>Loss Function: Used an appropriate loss function for binary segmentation, such as binary cross-entropy.</li>
+                    <li>Evaluation: Monitored performance metrics like accuracy and Intersection over Union (IoU) to assess the model's effectiveness.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
