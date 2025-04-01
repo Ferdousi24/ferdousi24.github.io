@@ -107,12 +107,12 @@
 		}
 
 	body {
-		background: #0e0d0d;
+		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: bold; 
+		font-weight: 300;
 		line-height: 1.75em;
-		color: #e6d7d7;
+		color: #888;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -128,13 +128,13 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.4em;
-		color: #0a0909;
+		line-height: 1.75em;
+		color: #888;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #181414;
+		color: #666;
 		line-height: 1.5em;
 	}
 
@@ -193,7 +193,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #767de2;
+			color: #E27689;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -232,8 +232,6 @@
 /* Container */
 
 	.container {
-		background-color: #000; // Black background
-        color: #fff; // White text
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
@@ -259,8 +257,6 @@
 		}
 	}
 
-
-	
 /* Row */
 
 	.row {
@@ -317,7 +313,7 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: rgb(17, 0, 255);
+			background: #f00;
 
 			img {
 				width: 48px;
@@ -327,12 +323,12 @@
 
 		&.fit {
 			display: block;
-			width: 200%;
+			width: 100%;
 		}
 
 		&.featured {
 			display: block;
-			width: 200%;
+			width: 100%;
 			margin: 0 0 2em 0;
 		}
 
@@ -469,7 +465,7 @@
 		tbody {
 			tr {
 				&:nth-child(2n+2) {
-					background: #0a0a0a;
+					background: #f4f4f4;
 				}
 			}
 		}
@@ -534,7 +530,6 @@
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
-			font-weight: bold;
 
 			h3 {
 				font-size: 1em;
@@ -735,7 +730,7 @@
 			background-image: url('images/overlay.png');
 
 			&.dark {
-				color: #161313;
+				color: #ddd;
 				color: rgba(255, 255, 255, 0.75);
 
 				h2, h3, h4, h5, h6 {
@@ -831,14 +826,7 @@
 			}
 
 	}
-	.academic-background {
-		text-align: left;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
-		line-height: 1.75em;
-		color: #888;
-	}
-	
+
 /* Narrow */
 
 	@include breakpoint('narrow') {
@@ -1031,7 +1019,7 @@
 					&:before {
 						text-decoration: none;
 						content: '\f0c9';
-						color: #161212;
+						color: #fff;
 						font-size: 18px;
 						background: rgba(128, 136, 144, 0.5);
 						border-radius: 0.35em;
