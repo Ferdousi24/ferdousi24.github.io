@@ -112,7 +112,7 @@
 		font-size: 19pt;
 		font-weight: bold; 
 		line-height: 1.75em;
-		color: #131010;
+		color: #e6d7d7;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -193,7 +193,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: #767de2;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -259,6 +259,8 @@
 		}
 	}
 
+
+	
 /* Row */
 
 	.row {
@@ -315,7 +317,7 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: rgb(17, 0, 255);
 
 			img {
 				width: 48px;

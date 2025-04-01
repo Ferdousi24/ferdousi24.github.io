@@ -73,14 +73,43 @@
 			<!-- Portfolio -->
 			<section id="portfolio" class="two">
 				<div class="container">
-
 					<header>
-						<h2> Portfolio</h2>
-					</header>
+						<h2 style="font-weight: bold; text-transform: uppercase;">PORTFOLIO</h2>
+					    </div>
+<!-- Category -->
 
-					<div class="row">
-						<div class="col-4 col-12-mobile">
-							<article class="item">
+    <!-- Skill Box -->
+	<div class="skills-box">
+		<button class="skill-btn active" data-category="all">Show All</button>
+		<button class="skill-btn" data-category="arcgispro">ArcGIS Pro/QGIS</button>
+		<button class="skill-btn" data-category="googleearth">Google Earth Engine</button>
+		<button class="skill-btn" data-category="web">Web Mapping/Dashboard</button>
+		<button class="skill-btn" data-category="programming">Programming (Python/R)</button>
+		<button class="skill-btn" data-category="database">Database Management</button>
+		<button class="skill-btn" data-category="survey">Data Collection</button>
+
+	</div>
+	
+	
+	
+
+    <!-- Image Display -->
+    <div class="image-container">
+        <img id="previewImage" src="">
+    
+</div>
+
+		</header>
+				</style>
+			</head>
+			<body>
+				
+			
+				<div class="row">
+					<div class="col-4 col-12-mobile" data-category="programming">
+						<article class="item">
+					
+				
 								<div class="skills-overlay">
 									<a href="https://github.com/Ferdousi24/Temporal-Analysis-by-Python/blob/main/project_paper.ipynb" class="image fit">
 										<img src="images/pic02.jpg" alt="GIS Project" />
@@ -93,7 +122,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="arcgispro">
 							<article class="item">
 								<a href="QGIS.html" class="image fit">
 									<img src="images/pic03.jpg" alt="QGIS" />
@@ -105,7 +134,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="database">
 							<article class="item">
 								<a href="PostgreSQL and PostGIS.html" class="image fit">
 									<img src="images/pic06.jpg" alt="PostGIS" />
@@ -117,10 +146,10 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="googleearth">
 							<article class="item">
 								<a href="https://github.com/Ferdousi24/Landcover_Bangladesh/blob/main/landcover_Bangladesh.ipynb" class="image fit">
-									<img src="images/pic07.jpg" alt="QGIS" />
+									<img src="images/pic07.jpg" alt="GEE" />
 								</a>
 								<header>
 									
@@ -132,7 +161,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="programming">
 							<article class="item">
 								<a href="https://github.com/Ferdousi24/Deep-Learning/blob/main/Squirrels_500.ipynb" class="image fit">
 									<img src="images/pic04.jpg" alt="Deep Learning" />
@@ -146,7 +175,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="arcgispro">
 							<article class="item">
 								<a href="network.html" class="image fit">
 									<img src="images/pic10.jpg" alt="Network Analysis" />
@@ -160,7 +189,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="web">
 							<article class="item">
 								<a href="web.html" class="image fit">
 									<img src="images/pic08.jpg" alt="Web Mapping" />
@@ -174,7 +203,7 @@
 							</article>
 						</div>
 					
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="arcgispro">
 							<article class="item">
 								<a href="waste.html" class="image fit">
 									<img src="images/pic05.jpg" alt="Waste Management" />
@@ -189,7 +218,7 @@
 							</article>
 						</div>
                         
-                        <div class="col-4 col-12-mobile">
+                        <div class="col-4 col-12-mobile", data-category="survey">
 							<article class="item">
 								<a href="survey.html" class="image fit">
 									<img src="images/survey.jpg" alt="Survey123_Moose" />
@@ -201,7 +230,7 @@
 								</a>
 							</article>
 						</div>
-                        <div class="col-4 col-12-mobile">
+                        <div class="col-4 col-12-mobile", data-category="web">
 							<article class="item">
 								<a href="dashboard.html" class="image fit">
 									<img src="images/pic12.jpg" alt="dashboard" />
@@ -213,7 +242,7 @@
 										</a>
 									</article>
 								</div>
-						<div class="col-4 col-12-mobile">
+						<div class="col-4 col-12-mobile", data-category="googleearth">
 							<article class="item">
 								<a href="NDWI.html" class="image fit">
 									<img src="images/NDWI.JPG" alt="ndwi-ottawa" />
@@ -241,11 +270,11 @@
     <div class="container">
 
         <header>
-            <h2>Certifications</h2>
+            <h2 style="font-weight: bold; text-transform: uppercase;">certifications</h2>
         </header>
 
         <div class="row">
-			<div class="col-4 col-12-mobile">
+			<div class="col-4 col-12-mobile exclude-category">
 				<article class="item">
 					<div class="skills-overlay">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/65904485ae4c3a0f594058b6/300" class="image fit"><img src="images/CER1.jpg" alt="certifications" /></a>
@@ -255,7 +284,7 @@
 						</div>
 					</header>
 				</article>
-				<article class="item">
+				<article class="col-4 col-12-mobile exclude-category">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/65845285d7e9de2ab155d81d/300" class="image fit"><img src="images/CER2.jpg" alt="certifications" /></a>
 					<header>
 						<a href="#" onclick="showDetails(event, 'details-1')"></a>
@@ -263,14 +292,14 @@
 					</header>
 				</article>
 			</div>
-			<div class="col-4 col-12-mobile">
+			<div class="col-4 col-12-mobile exclude-category">
 				<article class="item">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/6597433c1b3afd0330da06cf/300" class="image fit"><img src="images/CER3.jpg" alt="certifications" /></a>
 					<header>
 						
 					</header>
 				</article>
-				<article class="item">
+				<article class="col-4 col-12-mobile exclude-category">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/6584ea8fd7e9de2ab1ab379f/300" class="image fit"><img src="images/CER4.jpg" alt="Certifications" /></a>
 					<header>
 						<a href="#" onclick="showDetails(event, 'details-1')"></a>
@@ -278,7 +307,7 @@
 					</header>
 				</article>
 			</div>
-			<div class="col-4 col-12-mobile">
+			<div class="col-4 col-12-mobile exclude-category">
 				<article class="item">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/659032beae4c3a0f593c836c/240" class="image fit"><img src="images/CER5.jpg" alt="Certifications" /></a>
 					<header>
@@ -293,17 +322,17 @@
 				
 				</article>
 			</div>
-			<div class="col-4 col-12-mobile">
+			<div class="col-4 col-12-mobile exclude-category">
 		        <article class="item">
 			    <a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/658638dc0b7bc11dc1fbba06/300" class="image fit"><img src="images/CER7.jpg" alt="certifications" /></a>
 			   <header>
 			</div>
-			<div class="col-4 col-12-mobile">
+			<div class="col-4 col-12-mobile exclude-category">
 				<article class="item">
 				<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/6590a35fae4c3a0f59554802/300" class="image fit"><img src="images/CER8.jpg" alt="certifications" /></a>
 				<header>
 				</div>
-				<div class="col-4 col-12-mobile">
+				<div class="col-4 col-12-mobile exclude-category">
 					<article class="item">
 					<a href="https://www.esri.com/training/TrainingRecord/Certificate/fsult039_gsguo/6590334dae4c3a0f593cb508/300" class="image fit"><img src="images/CER9.jpg" alt="certifications" /></a>
 					<header>
@@ -317,16 +346,19 @@
 				<div class="container">
 
 					<header>
-						<h2>About Me</h2>
-					</header>
+						<h2 style="font-weight: bold; text-transform: uppercase;">About Me</h2>
+						<headerstyle= font-family: Arial, sans-serif;>
+							<p>I am a dedicated GIS enthusiast with a solid academic foundation in geography and environmental sciences. My passion for Geographic Information Systems (GIS) drives me to explore and master advanced GIS technologies to address and solve environmental challenges. I am committed to leveraging my skills to make meaningful contributions in the field of GIS.</p>
+							<header style="text-align: left; font-family: Arial, sans-serif;">
+								<h4 style="font-weight: bold; color: #a15977;">Skills:</h4>
+								<p>ArcGIS Pro | QGIS | Google Earth Engine | Python</p>
+								
+								<h4 style="font-weight: bold; color: #a15977;">Areas of Interest:</h4>
+								<p> Land Use and Land Cover Change | Climate Change | Water Environment | Conservation</p>
+							</header>
+							
 
-					<p>I am a dedicated GIS enthusiast with a solid academic foundation in geography and environmental sciences. My passion for Geographic Information Systems (GIS) drives me to explore and master advanced GIS technologies to address and solve environmental challenges. I am committed to leveraging my skills to make meaningful contributions in the field of GIS.</p>
-				<p>For more information: </p>
-				  <!-- Link to Resume PDF -->
-				  <div class="resume-link">
-					<a href="https://drive.google.com/file/d/1PPS63jDVfPKlY1lZAxRCPGOy3thGK1Qd/view?usp=sharing" target="_blank">View my full resume (PDF)</a>
-				</div>
-				
+						
 			</section>
 
 		</div>
