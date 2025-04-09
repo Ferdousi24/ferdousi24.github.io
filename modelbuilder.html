@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        p {
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 60%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ModelBuilder Project: Site Selection for Wastewater Treatment Plant</h1>
+        <p>This project was developed as part of the Esri course on <strong>Building Geoprocessing Models Using ArcGIS Pro</strong>.</p>
+        
+        <h2>Key Objective:</h2>
+        <p>Automate site selection for a new wastewater treatment plant using multiple spatial criteria.</p>
+
+        <h2>Site Selection Criteria:</h2>
+        <ul>
+            <li>Within <strong>3,000 feet</strong> of the Cache la Poudre River</li>
+            <li>Within <strong>1 mile</strong> of the city limits</li>
+            <li>At least <strong>300 feet</strong> from residential parcels and parks</li>
+            <li>Located <strong>outside the floodplain</strong></li>
+            <li>Located on <strong>vacant parcels</strong> that are <strong>50,000 sq ft</strong> or greater</li>
+        </ul>
+        
+
+        <h2>Workflow Using ModelBuilder:</h2>
+        <ul>
+            <li>1. Buffered river and city boundary layers</li>
+            <li>2. Generated exclusion zones for residential areas and parks</li>
+            <li>3. Used spatial queries to remove parcels within floodplains</li>
+            <li>4. Selected only vacant parcels ≥ 50,000 sq ft</li>
+            
+            <p>The model workflow is shown below:</p>
+            <img src="images/modelbuild.png" alt="ModelBuilder Workflow">
+        <h2>Key Learning::</h2>
+        <ul>
+            <li>✅ ModelBuilder automation and workflow design</li>
+            
+
+       
+</body>
+</html>
