@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIS Portfolio</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        p {
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 60%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizing Squirrel Sightings: Heat Map and Choropleth Mapping in ArcGIS Pro</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    li strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffeb3b;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 45%;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
     <div class="container">
@@ -48,20 +65,20 @@
 
         <h2>Site Selection Criteria:</h2>
         <ul>
-            <li>Within <strong>3,000 feet</strong> of the Cache la Poudre River</li>
-            <li>Within <strong>1 mile</strong> of the city limits</li>
-            <li>At least <strong>300 feet</strong> from residential parcels and parks</li>
-            <li>Located <strong>outside the floodplain</strong></li>
-            <li>Located on <strong>vacant parcels</strong> that are <strong>50,000 sq ft</strong> or greater</li>
+            <li>Within 3,000 feet of the Cache la Poudre River</li>
+            <li>Within 1 mile of the city limits</li>
+            <li>At least 300 feet from residential parcels and parks</li>
+            <li>Located outside the floodplain</li>
+            <li>Located on vacant parcels that are 50,000 sq ft or greater</li>
         </ul>
         
 
         <h2>Workflow Using ModelBuilder:</h2>
         <ul>
-            <li>1. Buffered river and city boundary layers</li>
-            <li>2. Generated exclusion zones for residential areas and parks</li>
-            <li>3. Used spatial queries to remove parcels within floodplains</li>
-            <li>4. Selected only vacant parcels ≥ 50,000 sq ft</li>
+            <li>Buffered river and city boundary layers</li>
+            <li>Generated exclusion zones for residential areas and parks</li>
+            <li>Used spatial queries to remove parcels within floodplains</li>
+            <li>Selected only vacant parcels ≥ 50,000 sq ft</li>
             
             <p>The model workflow is shown below:</p>
             <img src="images/modelbuild.png" alt="ModelBuilder Workflow">

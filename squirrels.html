@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Visualizing Squirrel Sightings: Heat Map and Choropleth Mapping in ArcGIS Pro </title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        p {
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 50%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizing Squirrel Sightings: Heat Map and Choropleth Mapping in ArcGIS Pro</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    li strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffeb3b;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 45%;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Project Description</h1>
-        <p>I processed and visualized squirrel sighting data using ArcGIS Pro to enhance spatial understanding of squirrel distribution across city neighborhoods. My primary objective was to create two distinct map types: a <strong>Heat Map</strong> to visualize the intensity and concentration of sightings and a <strong>Choropleth Map</strong> to show the number of squirrel sightings per neighborhood.</p>
-        <li><strong>Data Collection:</strong> The squirrel sighting data for this project was collected from <strong>iNaturalist</strong>, a community-driven platform for wildlife observation, spanning from April 2023 to April 2025. I filtered the data by time to focus on sightings within this specific period. Additionally, the neighborhood boundary data was sourced from Ottawa’s open data platform.
-        <h2>Key Highlights:</h2>
-        <ul>
-            <li>1. Imported the squirrel sighting data from an external CSV source and added it to the Ottawa Neighborhood boundary shapefile in ArcGIS Pro. I made sure to clean the data by removing points located outside the neighborhood boundaries to ensure the accuracy of the spatial analysis.</li>
-            <li>2. Created a <strong>Heat Map</strong> to display the intensity of squirrel sightings across different neighborhoods. This map helped visualize areas where sightings were most frequent, indicating potential hotspots of squirrel activity.</li>
-            <img src="images/squirrel_heatmap.png" alt="Squirrel Heat Map">
-            <li>3. Used the <strong>Spatial Join</strong> tool in ArcGIS Pro to associate the squirrel sighting points with the neighborhood polygons. This allowed me to calculate the number of sightings within each neighborhood and create a new field showing the count for each neighborhood.</li>
-            <li>4. Developed a <strong>Choropleth Map</strong> to show the total number of squirrel sightings per neighborhood. I applied graduated colors to indicate the density of sightings, making it easy to compare neighborhoods with higher and lower squirrel populations. This map is useful for understanding distribution patterns across the city.</li>
-            <img src="images/squirrel_choropleth.png" alt="Squirrel Choropleth Map">
-            
+  <div class="container">
+    <h1>Squirrel Sightings Visualization</h1>
 
-            <li>
-        </ul>
-        
+    <h2>Project Description</h2>
+    <p>
+      I processed and visualized squirrel sighting data using ArcGIS Pro to enhance spatial understanding of squirrel distribution across city neighborhoods. 
+      My primary objective was to create two distinct map types: a <strong>Heat Map</strong> to visualize the intensity and concentration of sightings, and a <strong>Choropleth Map</strong> to show the number of sightings per neighborhood.
+    </p>
 
-                
-                </li>
-            
-        
-        <h2>Key Learning:</h2>
-        <ul>
-        
+    <h2>Data Sources</h2>
+    <ul>
+      <li><strong>Squirrel Sighting Data:</strong> Collected from <em>iNaturalist</em>, covering April 2023 to April 2025.</li>
+      <li><strong>Neighborhood Boundaries:</strong> Sourced from the Ottawa Open Data portal.</li>
+    </ul>
 
-    <li><strong>Heat Map & Choropleth Map Creation:</strong> I learned how to create both heat maps and choropleth maps in ArcGIS Pro to visualize spatial patterns. This allowed me to effectively represent squirrel sighting intensity and distribution across neighborhood.</li>
-    <li><strong>Spatial Join for Data Aggregation:</strong> By using the <strong>Spatial Join</strong> tool, I gained experience in aggregating point data by neighborhood. This process helped me calculate the number of squirrel sightings per neighborhood.</li>
-</ul>
+    <h2>Key Highlights</h2>
+    <ol>
+      <li>
+        <strong>Data Cleaning & Import:</strong>
+        Imported the squirrel sighting CSV and added it to the Ottawa Neighborhood boundary shapefile. Cleaned data by removing points outside neighborhood boundaries.
+      </li>
 
-        </ul>
+      <li>
+        <strong>Heat Map Visualization:</strong>
+        Created a heat map to visualize areas with the highest concentration of squirrel sightings.
+        <img src="images/squirrel_heatmap.png" alt="Squirrel Heat Map">
+      </li>
 
-        
-    </div>
+      <li>
+        <strong>Spatial Join for Aggregation:</strong>
+        Used ArcGIS Pro’s Spatial Join tool to associate sighting points with neighborhoods and calculate sightings per area.
+      </li>
+
+      <li>
+        <strong>Choropleth Mapping:</strong>
+        Designed a choropleth map to show sightings per neighborhood using graduated colors.
+        <img src="images/squirrel_choropleth.png" alt="Squirrel Choropleth Map">
+      </li>
+    </ol>
+
+    <h2>Key Learnings</h2>
+    <ul>
+      <li><strong>Heat Map & Choropleth Techniques:</strong> Learned to build both heat maps and choropleths for spatial visualization in ArcGIS Pro.</li>
+      <li><strong>Spatial Aggregation:</strong> Gained hands-on experience using the Spatial Join tool for summarizing and mapping point data by region.</li>
+    </ul>
+  </div>
 </body>
 </html>

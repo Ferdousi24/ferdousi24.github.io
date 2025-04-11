@@ -1,47 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landfill Sites of Dhaka City, Bangladesh</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1, h2 {
-            color: white;
-        }
-        p, li {
-            font-size: 1.2em;
-        }
-        img {
-            width: 30%; /* Adjust the width of the image */
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizing Squirrel Sightings: Heat Map and Choropleth Mapping in ArcGIS Pro</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    li strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffeb3b;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 45%;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
-     <!-- Add the path to your image here -->
-    <h1>Project Description:</h1>
-    <p> This project focuses on the analysis and visualization of the two major landfill sites in Dhaka City, Bangladesh, emphasizing land cover and population density around these sites. </p>
-        
-    <h2>Data:</h2>
-    <ul>
-        <li> Google Maps.</li>
-        <li>ESRI Land Cover: A global land cover dataset.</li>
-        <li>Oak Ridge National Laboratory’s LandScan Global Dataset.</li>
-    </ul>
 
-    <h2>Key Highlights:</h2>
-    <ul>
-        <li>1. Extracted and plotted the coordinates of the landfill sites from Google Maps.</li>
-        <img src="images/Layout4.jpg" alt="Landfill Sites Image">
-        <li>2. Analyzed the land cover data to understand the surrounding land use types using the ESRI Land Cover dataset.</li>
-        <img src="images/Layout5.jpg" alt=" Landcover">
-        <li>3. Created a 2 km buffer zone around the landfill sites and calculated the population density within this buffer using the LandScan Global Dataset.</li>
-    </ul>
+<h1>Landfill Impact Assessment in Dhaka City</h1>
+
+<h2>Project Description</h2>
+<p>
+    This project presents a geospatial analysis and visualization of two major landfill sites located in Dhaka City, Bangladesh. The primary focus is to evaluate land cover patterns and estimate population density in the areas surrounding these landfill sites. The aim is to better understand the environmental and social implications of these sites on nearby communities using open-source and public datasets.
+</p>
+
+<h2>Data Sources</h2>
+<ul>
+    <li><strong>Google Maps:</strong> Used to extract the geographic coordinates of the landfill locations.</li>
+    <li><strong>ESRI Land Cover (2021):</strong> A global land cover classification dataset for visualizing land use patterns.</li>
+    <li><strong>LandScan Global Population Dataset:</strong> Provided by Oak Ridge National Laboratory, offering high-resolution global population distribution data.</li>
+</ul>
+
+<h2>Workflow and Methodology</h2>
+<ol>
+    <li>
+        <strong>Site Identification and Coordinate Extraction</strong>
+        The two major landfill sites in Dhaka (Matuail and Aminbazar) were identified using Google Maps. Latitude and longitude coordinates for each site were extracted manually and geocoded into the GIS environment for spatial analysis.
+        <br><img src="images/Layout4.jpg" alt="Mapped Landfill Sites in Dhaka">
+    </li>
+
+    <li>
+        <strong>Land Cover Analysis</strong>
+        The ESRI Land Cover dataset was clipped to the area of interest surrounding the landfill sites. This helped identify dominant land cover classes such as built-up areas, vegetation, and water bodies. The land cover classification was visualized using symbology and layout designs in ArcGIS Pro.
+        <br><img src="images/Layout5.jpg" alt="Land Cover Analysis near Landfill Sites">
+    </li>
+
+    <li>
+        <strong>Buffer Zone Creation</strong>
+        A 2 km buffer zone was generated around each landfill site using ArcGIS tools. This buffer represents the area likely to be impacted by the landfill activities in terms of population exposure and environmental degradation.
+    </li>
+
+    <li>
+        <strong>Population Density Extraction</strong>
+        The LandScan Global Population Raster was overlaid with the buffer zones. Zonal statistics were applied to extract and calculate the total estimated population living within each 2 km buffer. This provided an understanding of the human population potentially affected by landfill proximity.
+        <br><img src="images/pic05.jpg" alt="Population Density in Buffer Zones">
+    </li>
+
+    
+</ol>
+
+<h2>Key Outcomes</h2>
+<ul>
+    <li>Identified high population exposure zones near landfill areas.</li>
+    <li>Visualized land use patterns that may be affected by landfill expansion or contamination.</li>
+    <li>Demonstrated the potential use of GIS for environmental planning and public health awareness in urban areas.</li>
+</ul>
+
+</body>
+</html>

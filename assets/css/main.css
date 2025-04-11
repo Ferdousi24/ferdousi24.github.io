@@ -166,7 +166,7 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		border-bottom: dotted 1px #8a76e2(128, 128, 128, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -174,10 +174,12 @@ input, select, textarea {
 		outline: 0;
 	}
 
-		a:hover {
-			color: #E27689;
-			border-bottom-color: rgba(255, 255, 255, 0);
-		}
+	a:hover {
+		color: #8a76e2;
+		border-bottom-color: rgba(255, 255, 255, 0);
+		font-weight: bold;
+	}
+	
 
 	sub {
 		position: relative;
@@ -213,14 +215,18 @@ input, select, textarea {
 /* Container */
 
 	.container {
+		
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+		
 	}
-
+	
+     
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
+				
 				width: 1200px;
 			}
 
@@ -1851,7 +1857,7 @@ input, select, textarea {
 		display: block;
 		border: 0;
 		outline: 0;
-		background: #fff;
+		background: #0a0a0a;
 		background: rgba(255, 255, 255, 0.75);
 		width: 100%;
 		border-radius: 0.35em;

@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Mapping Project: Libraries Open at Noon</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        p {
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 40%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizing Squirrel Sightings: Heat Map and Choropleth Mapping in ArcGIS Pro</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    li strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffeb3b;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 45%;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Project Description</h1>
-        <p>I developed this as part of my course on Real-Time GIS in LinkedIn Learning.</p>
-        
-        <h2>Key Highlights:</h2>
-        <ul>
-            <li>1. Data preparation and processing in ArcGIS Pro: After downloading and inspecting the data, I identified and structured the libraries in the city that open at noon and imported them into a mobile database system. Once the feature dataset was reprojected, I exported it in JSON format for GIS integration.</li>
-            <img src="images/Layout9.png" alt="Libraries">
-            <li>2. Web Map Development: Published the processed dataset as a web map using ArcGIS Online. Configured symbology, labels, and pop-ups for better visualization.</li>
-            <li>3. Web Mapping Application: Developed an interactive web mapping application using ArcGIS Instant App. Added functionalities like filtering, searching, and user-friendly navigation.</li>
-        </ul>
-        
-        <h2></h2>
-        <ul>
-            <li>GIS Skills: Spatial data processing, visualization in ArcGIS Pro</li>
-            <li>Web GIS Development: Creating web maps and applications using ArcGIS Online and Instant App</li>
-        </ul>
 
-        
-    </div>
+  <div class="container">
+    <h1>Real-Time GIS Web Mapping Project</h1>
+
+    <h2>Project Overview</h2>
+    <p>
+      This project was developed as part of my Real-Time GIS training through LinkedIn Learning. The goal was to process spatial data, create a dynamic web map, and deploy an interactive mapping application using ArcGIS tools.
+    </p>
+
+    <h2>Workflow and Key Highlights</h2>
+    <ol>
+      <li>
+        <strong>Data Preparation and Processing in ArcGIS Pro</strong>
+        I began by downloading a dataset of public libraries in a city. I filtered out libraries that open at noon and structured the data into a mobile geodatabase. The spatial data was reprojected and exported into a JSON format for compatibility with web platforms.
+        <br><img src="images/Layout9.png" alt="Filtered Library Locations">
+      </li>
+
+      <li>
+        <strong>Web Map Development Using ArcGIS Online</strong>
+        The cleaned and structured dataset was published as a web map. I configured symbology, labeling, and interactive pop-ups to enhance user interpretation and engagement.
+      </li>
+
+      <li>
+        <strong>Web Mapping Application with Instant App</strong>
+        I built an interactive web mapping application using ArcGIS Instant App. The app includes features such as search, layer filtering, and an intuitive navigation panel to improve accessibility for users.
+      </li>
+    </ol>
+
+    <h2>Skills Demonstrated</h2>
+    <ul>
+      <li><strong>GIS Skills:</strong> Spatial data processing, symbology design, and layout development using ArcGIS Pro.</li>
+      <li><strong>Web GIS Development:</strong> Creating and customizing web maps and Instant Apps in ArcGIS Online.</li>
+      <li><strong>User Experience:</strong> Designing interactive elements to enhance usability in web applications.</li>
+    </ul>
+  </div>
 </body>
 </html>
