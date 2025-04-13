@@ -35,7 +35,7 @@
     img {
       margin-top: 10px;
       margin-bottom: 20px;
-      max-width: 45%;
+      max-width: 15%;
       height: auto;
       border: 2px solid #fff;
       border-radius: 4px;
@@ -56,19 +56,55 @@
   </style>
 </head>
 <body>
-    <div class="container">
-        <h1> Public facilities in the City of Ottawa</h1>
-        <h2>Project Description</h2>
-        <p>This project focuses on mapping and analyzing public facilities in the City of Ottawa, specifically by exploring the functions of QGIS. This work is inspired by the recent completion of a course on QGIS.</p>
-        
-        <h2>Key Highlights:</h2>
-        <ul>
-            <li> Data was collected from the City of Ottawa Open Data.</li>
-            <li>The initial part was the foundational step of displaying public facilities on a map.</li>
-            <img src="images/Layout 6.png" alt="Ottawa Public Facilities Map">
-            <img src="images/Layout7.png" alt="Ottawa Public Facilities Map">
-            <li> Spatial analysis was conducted to count fire stations using QGIS with buffering and joining techniques within the mapped area.</li>
-        </ul>
+  <div class="container">
+    <h1>Mapping and Spatial Analysis of Public Facilities in the City of Ottawa</h1>
+
+    <h2>Project Description</h2>
+    <p>
+        This project focuses on the mapping and spatial analysis of public facilities in the City of Ottawa, using <strong>QGIS</strong>—a powerful open-source Geographic Information System. The project was developed to reinforce practical GIS skills acquired through a recently completed QGIS course. It highlights how spatial data can be effectively visualized and analyzed to support urban planning and community infrastructure assessment.
+    </p>
+    <p>
+        Public facilities such as schools, libraries, community centers, and emergency services play a critical role in urban life. Understanding their spatial distribution and accessibility is essential for promoting equitable access and improving service delivery across different neighborhoods.
+    </p>
+
+    <h2>Key Highlights</h2>
+    <ul>
+        <li>
+            <strong>Data Source:</strong> All geospatial data layers were sourced from the <a href="https://open.ottawa.ca" target="_blank">City of Ottawa Open Data Portal</a>, ensuring up-to-date and reliable information for mapping public infrastructure.
+        </li>
+        <li>
+            <strong>Map Visualization:</strong> The initial phase involved importing shapefiles and other spatial datasets into QGIS to <strong>visualize the geographic distribution of public facilities</strong> across Ottawa. Styling and symbology techniques were applied to categorize facilities by type and enhance map readability.
+        </li>
+        <li>
+            <strong>Layout Design:</strong> Professional map layouts were created using the QGIS Print Layout tool, incorporating key cartographic elements such as legends, scale bars, north arrows, and titles to produce publication-ready maps.
+        </li>
+        <li>
+            <strong>Spatial Analysis:</strong> Conducted a focused analysis on emergency service coverage by:
+            <ul>
+                <li>Creating <strong>buffer zones</strong> around fire stations to assess their service coverage area</li>
+                <li>Performing <strong>spatial joins</strong> to count the number of public facilities located within proximity to fire stations</li>
+                <li>Identifying potential underserved areas that may require improved emergency infrastructure</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Skill Development:</strong> This project strengthened my ability to:
+            <ul>
+                <li>Work with vector data and perform geoprocessing tasks in QGIS</li>
+                <li>Apply spatial queries and analytical operations such as buffering, selection by location, and attribute joins</li>
+                <li>Design cartographically effective and informative static maps for reports or presentations</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Output Preview</h2>
+    <p>
+        The following maps display the spatial distribution of various public facilities across Ottawa. Each map layout was created using QGIS’s print composer, combining both visualization and spatial analysis techniques to communicate meaningful insights.
+    </p>
+
+    <img src="images/Layout 6.png" alt="Public Facilities Map - Ottawa" style="max-width:40%; height:auto; margin-bottom:15px;">
+    <img src="images/Layout7.png" alt="Fire Station Buffer Analysis - Ottawa" style="max-width:40%; height:auto;">
+</div>
+
     </div>
 </body>
 </html>

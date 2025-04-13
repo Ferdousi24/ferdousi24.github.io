@@ -56,17 +56,53 @@
   </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Geospatial Analysis to Explore Methane Concentration Trends</h1>
-        <h2>Project Description</h2>
-        <p>It was a project completed as part of the "Seminar for Geomatics" course during my exchange program at Carleton University. The project aimed to determine how methane concentration changes over the year and to identify the months with the highest concentration in Ottawa, Ontario, Canada.</p>
-        
-        <h2>Key Highlights:</h2>
-        <ul>
-            <li>Data was downloaded through openEO, within the Copernicus Data Space Ecosystem.</li>
-            <li>Used Google Colab for seamless integration of Python libraries and easy navigation with Google Drive.</li>
-            <li>Several open-source geospatial packages are employed for data manipulation.</li>
-        </ul>
+  <div class="container">
+    <h1>Geospatial Analysis of Methane Concentration Trends in Ottawa</h1>
+    
+    <h2>Project Description</h2>
+    <p>
+        This project was completed as part of the <strong>“Seminar for Geomatics”</strong> course during my academic exchange program at <strong>Carleton University</strong>, Ottawa, Canada. The objective was to investigate methane concentration trends throughout the year and identify the months with the highest average levels in Ottawa. Methane (CH<sub>4</sub>) is a critical greenhouse gas, and analyzing its spatial and temporal patterns provides valuable insights for climate monitoring and urban environmental planning.
+    </p>
+    <p>
+        The project involved the acquisition, preprocessing, and visualization of Earth observation data from the Sentinel-5P satellite. The analysis included both <strong>daily and monthly average methane concentrations</strong>, offering a comprehensive view of short-term variations and long-term seasonal patterns.
+    </p>
+
+    <h2>Key Highlights</h2>
+    <ul>
+        <li>
+            <strong>Satellite Data Acquisition:</strong> Retrieved Sentinel-5P Level-3 methane (CH<sub>4</sub>) data using the <strong>openEO API from the Copernicus Data Space Ecosystem, ensuring consistent, high-quality atmospheric data for analysis.
+        </li>
+        <li>
+            <strong>Daily Averaging:</strong> Calculated daily average concentrations to reduce noise, identify outliers, and establish a reliable baseline for trend detection before aggregating to monthly summaries.
+        </li>
+        <li>
+            <strong>Monthly Aggregation:</strong> Aggregated daily data into monthly means to reveal seasonal cycles and determine which months exhibited peak methane emissions.
+        </li>
+        <li>
+            <strong>Cloud-Based Workflow:</strong> Used Google Colab to run the Python-based workflow, enabling seamless integration with Google Drive for data storage and collaboration.
+        </li>
+        <li>
+            <strong>Open-Source Geospatial Tools:</strong> Leveraged powerful Python libraries such as <code>xarray</code>, <code>rasterio</code>, <code>geopandas</code>, <code>matplotlib</code>, <code>numpy</code> etc., to:
+            <ul>
+                <li>Parse and analyze multi-temporal raster datasets</li>
+                <li>Compute daily and monthly spatial averages</li>
+                <li>Visualize geospatial and temporal trends</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Scientific Insight:</strong> The study revealed elevated methane levels during late fall and winter, potentially linked to atmospheric conditions (e.g., low mixing height) and anthropogenic factors such as heating-related emissions.
+        </li>
+    </ul>
+
+    <h2>Output Preview</h2>
+    <p>
+        The image below displays the <strong>monthly average methane concentration</strong across Ottawa. Prior to generating this raster, daily averages were computed for each pixel and subsequently aggregated to monthly means. This approach improved the accuracy and interpretability of the results by minimizing daily outliers and atmospheric anomalies.
+    </p>
+
+    <img src="images/raster.png" alt="Monthly Average Methane Concentration in Ottawa" style="max-width:100%; height:auto; border: 1px solid #ddd; padding: 10px;">
+</div>
+
+          </ul>
     </div>
 </body>
 </html>

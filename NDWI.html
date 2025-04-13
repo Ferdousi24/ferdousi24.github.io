@@ -57,24 +57,37 @@
 </head>
 <body>
     <div class="container">
-        <h1>NDWI Analysis of Ottawa</h1>
-        <p><strong>Overview:</strong> This project analyzes the Normalized Difference Water Index (NDWI) of Ottawa using satellite imagery in Google Earth Engine.</p>
-        
+      <div class="container">
+        <h1>NDWI-Based Water Body Analysis in Ottawa Using Google Earth Engine</h1>
+    
+        <p><strong>Overview:</strong>  
+        This project applies the Normalized Difference Water Index (NDWI) to analyze and visualize surface water bodies in <strong>Ottawa, Ontario</strong>, using cloud-based satellite imagery processing in <strong>Google Earth Engine (GEE)</strong>. The project demonstrates how Earth observation data can be effectively used to support hydrological studies, urban planning, and environmental monitoring.</p>
+    
+        <h2>Objectives</h2>
+        <ul>
+            <li>Detect and delineate water bodies within the Ottawa region using Sentinel-2 imagery.</li>
+            <li>Enhance understanding of remote sensing indices and geospatial image processing.</li>
+            <li>Explore the capabilities of Google Earth Engine for real-time spatial analysis.</li>
+        </ul>
+    
         <h2>Methodology</h2>
         <ul>
-            <li><strong>Satellite Data:</strong> Sentinel-2 imagery</li>
-            <li><strong>Tools Used:</strong> Google Earth Engine (GEE), JavaScript</li>
-            <li><strong>NDWI Formula:</strong> (Green - NIR) / (Green + NIR)</li>
+            <li><strong>Data Source:</strong> Sentinel-2 MSI Level-1C imagery, selected for high spatial resolution and multispectral coverage.</li>
+            <li><strong>Index Used:</strong> <strong>NDWI = (Green - NIR) / (Green + NIR)</strong>, designed to enhance the presence of water by contrasting reflectance in the green (Band 3) and near-infrared (Band 8) spectral bands.</li>
+            <li><strong>Platform & Tools:</strong> Google Earth Engine (JavaScript API) for cloud-based processing, map visualization, and threshold-based classification of water features.</li>
+            <li><strong>Preprocessing:</strong> Filtered by cloud cover and date range to ensure data quality and seasonal clarity (e.g., summer months for maximum water visibility).</li>
         </ul>
-
+    
         <h2>Results</h2>
+        <p>
+            The analysis successfully highlighted various surface water features across the city, NDWI values were used to create a binary water mask, where water pixels were isolated based on a defined threshold (e.g., NDWI > 0.2). The resulting map provides a clear and accurate spatial distribution of water bodies within the study area.
+        </p>
         
-
-        <h2>Code</h2>
-        <p>Check out the full code on <a href="https://code.earthengine.google.com/0f6404104653a981cb0613a953978fb5" target="_blank">Google Earth Engine</a>.</p>
-
+    
+    
         <h2>Conclusion</h2>
-        <p>This analysis helps in identifying water bodies  in Ottawa.</p>
+        <p>
+            This project showcases the potential of remote sensing and cloud-based geospatial platforms in environmental research. By leveraging NDWI and Sentinel-2 data, it was possible to effectively identify water bodies and support data-driven decision-making. The project also strengthened my skills in Earth Engine scripting, satellite image interpretation, and spatial analysis.
+        </p>
     </div>
-</body>
-</html>
+    

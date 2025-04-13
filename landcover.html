@@ -56,13 +56,53 @@
   </style>
 </head>
 <body>
-    <h1>Project Description</h1>
-    <p>This project presents an analysis of the land cover of Bangladesh. This is my first project on Google Earth Engine, inspired by Professor Qiusheng Wu's tutorial.</p>
-    
-    <h2>Key Highlights:</h2>
+  <div class="container">
+    <h1>Land Cover Classification Analysis of Bangladesh Using Google Earth Engine</h1>
+
+    <h2>Project Description</h2>
+    <p>
+        This project represents my first hands-on experience with <strong>Google Earth Engine (GEE)</strong>, focusing on analyzing the land cover of <strong>Bangladesh</strong>. The project was inspired by the GEE tutorial series by <strong>Professor Qiusheng Wu</strong>, which introduced practical techniques for working with satellite-derived datasets and cloud-based geospatial analysis.
+    </p>
+    <p>
+        The primary goal of this project was to extract and visualize land cover patterns across Bangladesh using high-resolution Earth observation data. This type of analysis is crucial for understanding land use dynamics, supporting environmental planning, and informing sustainable development initiatives in the region.
+    </p>
+
+    <h2>Key Highlights</h2>
     <ul>
-        <li>Loaded ESA's WorldCover data for an accurate representation of land cover in Bangladesh.</li>
-        <li>Used Google Earth Engine (GEE) and Python within the Google Colab environment.</li>
+        <li>
+            <strong>Data Source:</strong> Utilized the <strong>ESA WorldCover 10m 2021 dataset</strong>, which provides globally consistent, high-resolution (10m) land cover classification. The dataset was accessed directly through the Google Earth Engine Data Catalog.
+        </li>
+        <li>
+            <strong>Google Earth Engine (GEE):</strong> Employed GEE’s JavaScript and Python APIs to:
+            <ul>
+                <li>Define the study area by filtering the administrative boundaries of Bangladesh</li>
+                <li>Load, visualize, and process raster data representing land cover types</li>
+                <li>Apply masking and color palettes to highlight specific land classes (e.g., urban, cropland, forest, water bodies)</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Python & Google Colab:</strong> Used the <code>geemap</code> and <code>ee</code> libraries in a <strong>Google Colab notebook</strong> to interact with GEE via Python. This allowed for easy documentation, visualization, and reproducibility of the analysis.
+        </li>
+        <li>
+            <strong>Visualization:</strong> Generated interactive maps showing spatial distribution of land cover classes, with custom symbology and legends for intuitive interpretation.
+        </li>
+        <li>
+            <strong>Skills Gained:</strong> Through this project, I gained proficiency in:
+            <ul>
+                <li>Accessing and manipulating remote sensing data in Google Earth Engine</li>
+                <li>Integrating GEE with Python for scalable geospatial workflows</li>
+                <li>Using cloud-based environments (Google Colab) for data analysis and sharing</li>
+            </ul>
+        </li>
     </ul>
+
+    <h2>Output Preview</h2>
+    <p>
+        The final output provides a high-resolution map of land cover classifications for Bangladesh in 2021. This forms a foundational step for future projects involving change detection, land use planning, or climate vulnerability assessments.
+    </p>
+
+    <img src="images/bangladesh_landcover.png" alt="Land Cover Map of Bangladesh" style="max-width:100%; height:auto; border: 1px solid #ddd; padding: 10px;">
+</div>
+
 </body>
 </html>
