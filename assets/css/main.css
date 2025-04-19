@@ -2671,6 +2671,9 @@ input, select, textarea {
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: gives subtle card depth */
 	  }
 	  
+
+
+	  
 	  .card-title-outside {
 		margin-top: 0.4rem;
 		text-align: center;
