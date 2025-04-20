@@ -129,7 +129,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.querySelectorAll(".skill-btn");
-    let projects = document.querySelectorAll(".col-4.col-12-mobile"); // Target all sections
+    let projects = document.querySelectorAll(".col-6.col-12-mobile"); // Target all sections
 
     buttons.forEach(button => {
         button.addEventListener("click", function () {
