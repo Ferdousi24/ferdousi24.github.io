@@ -1854,6 +1854,7 @@ input, select, textarea {
 			line-height: 2em;
 			text-align: center;
 			border: 0;
+			font-size: 1.5em; 
 		}
 
 /* Form */
@@ -2691,7 +2692,7 @@ input, select, textarea {
 	
 		margin: 0;
 		padding: 0;
-		color: #748597;
+		color: #333333;
 		text-decoration: none;
 	  }
 	  
@@ -2752,8 +2753,22 @@ input, select, textarea {
     color: rgb(34, 181, 218) !important;
   }
 
-	 
-  
+  .icon.brands.fa-github {
+    margin-bottom: 10px; /* Space below the GitHub icon */
+}
+
+.card-title-outside a {
+    margin-top: 15px; /* Adds space above the title */
+}
+
+
+
+/* Change the color of the GitHub text */
+.github-text-e {
+    color: #0078D4; /* Blue color for the GitHub word */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
 
 
 
