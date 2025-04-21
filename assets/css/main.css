@@ -2783,5 +2783,18 @@ input, select, textarea {
 
 
 
-
+.skills-list {
+	list-style-type: none; /* Removes the default bullet points */
+	padding-left: 0; /* Removes left padding */
+	text-align: justify; /* Justifies the text */
+	font-size: 1.1rem; /* Sets font size */
+	color: #333333;
+	font-weight: bold; /* Sets text color */
+  }
+  
+  .skills-list li {
+	margin-bottom: 0.5rem; /* Adds space between each item */
+	 /* Makes the text bold */
+  }
+  
  
