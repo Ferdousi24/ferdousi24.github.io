@@ -2079,7 +2079,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background:  #2c2c2c	url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2671,7 +2671,7 @@ input, select, textarea {
 		flex-direction: column;
 		height: 100%;
 		width: 100%;
-		padding: 1rem;
+		padding: .1rem;
 		font-size: medium;
 		font-weight: bold;
 		color: #111111;
