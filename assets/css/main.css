@@ -112,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #008000;
 		line-height: 1.5em;
 	}
 
@@ -2287,14 +2287,20 @@ input, select, textarea {
 
 			#main > section.two {
 				background-color: #f5fafa;
+				border-top: 4px solid green;
+	border-top-left-radius: 10px; /
 			}
 
 			#main > section.three {
 				background-color: #ecf1f1;
+				border-top: 4px solid green;
+	border-top-left-radius: 10px; /
 			}
 
 			#main > section.four {
 				background-color: #e8edec;
+				border-top: 4px solid green;
+	            border-top-left-radius: 10px; /
 			}
 
 /* Wide */
