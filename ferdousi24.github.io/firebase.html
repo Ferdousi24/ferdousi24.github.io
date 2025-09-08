@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Squirrel Sightings Tracker with Firebase and Python</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5em;
+    }
+
+    li {
+      margin-bottom: 0.8em;
+    }
+
+    li strong {
+      color: #ffeb3b;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Squirrel Sightings Tracker Using Firebase and Python</h1>
+
+    <h2>Project Overview</h2>
+    <p>
+      This project involves the development of a lightweight Python application that collects and uploads wildlife observation data — specifically squirrel sightings — to a cloud-based Firebase Realtime Database. Each observation includes species name, fur color, and geolocation (latitude and longitude). The project simulates a real-world use case where wildlife data is collected in the field and automatically stored in a centralized, cloud-accessible platform.
+    </p>
+    <p>
+      The core objective was to explore how cloud databases can be used in geospatial workflows to manage spatial and attribute data efficiently. Firebase was used for its real-time data syncing capabilities, while the Firebase Admin SDK in Python enabled secure, authenticated data transactions.
+    </p>
+
+    <h2>Key Contributions</h2>
+    <ul>
+      <li><strong>Database Setup:</strong> Configured Firebase Realtime Database to accept structured wildlife observation data.</li>
+      <li><strong>Authentication:</strong> Implemented secure access using service account credentials via Firebase Admin SDK.</li>
+      <li><strong>Data Structuring:</strong> Designed a consistent schema using JSON format to store species details, colors, and geolocation points.</li>
+      <li><strong>Scripting:</strong> Developed Python code to automate the process of generating and uploading squirrel sighting records.</li>
+    </ul>
+
+    
+
+    <h2>What I Learned</h2>
+    <ul>
+      <li><strong>Firebase Fundamentals:</strong> Gained hands-on experience with setting up and managing a cloud NoSQL database, and connecting it to Python-based applications.</li>
+      <li><strong>Secure API Integration:</strong> Learned how to authenticate scripts and securely manage sensitive credentials for cloud services.</li>
+      <li><strong>Practical Geospatial Workflows:</strong> Understood how wildlife or environmental data can be structured and streamed from the field to the cloud for further GIS analysis or visualization.</li>
+
+    </ul>
+  </div>
+</body>
+</html>
