@@ -206,6 +206,19 @@ body {
   margin-bottom: 8px;
 }
 
+.right-column {
+  padding-left: 20px;  /* space from the left edge */
+  padding-right: 20px; /* space from the right edge */
+}
+
+.right-column h4,
+.right-column p,
+.right-column ul {
+  margin-left: 0; /* reset any default left margin */
+  margin-right: 0; /* optional, keeps it clean */
+}
+
+
 .project p.description { color: #555; }
 
 /* Project Card Elements Spacing */
