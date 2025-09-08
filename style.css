@@ -447,22 +447,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.3s;
 }
 
-/* Make navbar scrollable on small screens */
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: flex-start; /* align items to left */
+  justify-content: center;
   margin: 0;
-  padding: 0 10px; /* small horizontal padding */
-  overflow-x: auto; /* allow horizontal scrolling */
-  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
-  gap: 15px; /* space between items */
+  padding: 0;
 }
 
 .navbar li {
-  white-space: nowrap; /* prevent text wrapping */
+  margin: 0 15px;
 }
-
 
 
 
@@ -498,4 +493,22 @@ body {
   .contact-icons a { font-size: 1.3em; }
   .project { padding: 12px; }
   .projects { grid-template-columns: 1fr; }
+}
+
+/* Mobile View Navbar Fix */
+@media (max-width: 599px) {
+  .navbar ul {
+    display: flex;
+    justify-content: flex-start; /* align items to left */
+    padding: 0 10px; /* small horizontal padding */
+    margin: 0;
+    overflow-x: auto; /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+    gap: 10px; /* spacing between items */
+  }
+
+  .navbar li {
+    white-space: nowrap; /* prevent text from wrapping */
+    flex: 0 0 auto; /* keep items from shrinking */
+  }
 }
