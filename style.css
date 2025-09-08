@@ -203,7 +203,7 @@ body {
 .right-column .project h4,h5 {
   font-size: 1.1em;
   color: #222;
-  
+  padding: 20px 20px;
   margin-bottom: 8px;
 }
 
@@ -492,14 +492,6 @@ body {
 @media(max-width: 599px) {
   .container { flex-direction: column; }
   .left-column img { width: 100px; height: 100px; }
-  .contact-icons a { font-size: 1.3em; }
-  .project { padding: 12px; }
-  .projects { grid-template-columns: 1fr; }
-}
-
-@media(max-width: 599px) {
-  .container { flex-direction: column; }
-  .right-column img { width: 100px; height: 100px; }
   .contact-icons a { font-size: 1.3em; }
   .project { padding: 12px; }
   .projects { grid-template-columns: 1fr; }
