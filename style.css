@@ -488,38 +488,72 @@ body {
   .projects { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---------------- Mobile View ---------------- */
-@media(max-width: 599px) {
-  .container { flex-direction: column; }
-  .left-column img { width: 100px; height: 100px; }
-  .contact-icons a { font-size: 1.3em; }
-  .project { padding: 12px; }
-  .projects { grid-template-columns: 1fr; }
-}
-
-@media(max-width: 599px) {
-  .container { flex-direction: column; }
-  .right-column img { width: 100px; height: 100px; }
-  .contact-icons a { font-size: 1.3em; }
-  .project { padding: 12px; }
-  .projects { grid-template-columns: 1fr; }
-}
-
-/* Mobile View Navbar Fix */
+/* ----------------
+/* Mobile View ---------------- */
 @media (max-width: 599px) {
+  /* Container adjustments */
+  .container {
+    flex-direction: column;
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+
+  /* Columns */
+  .left-column,
+  .right-column {
+    width: 100%;          /* full width on mobile */
+    box-sizing: border-box;
+    padding: 10px;        /* reduce padding for mobile */
+  }
+
+  /* Images */
+  .left-column img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .right-column img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  /* Text wrapping */
+  .left-column h1,
+  .left-column p,
+  .left-column span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Projects grid */
+  .projects {
+    grid-template-columns: 1fr; /* stack items vertically */
+  }
+
+  .project {
+    padding: 12px;       /* smaller padding on mobile */
+  }
+
+  /* Contact icons */
+  .contact-icons a {
+    font-size: 1.3em;
+  }
+
+  /* Navbar adjustments */
   .navbar ul {
     display: flex;
-    justify-content: flex-start; /* align items to left */
-    padding: 0 10px; /* small horizontal padding */
+    justify-content: flex-start;
+    padding: 0 10px;
     margin: 0;
-    overflow-x: auto; /* horizontal scroll if needed */
-    -webkit-overflow-scrolling: touch; /* smooth scrolling */
-    gap: 10px; /* spacing between items */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
   }
 
   .navbar li {
-    white-space: nowrap; /* prevent text from wrapping */
-    flex: 0 0 auto; /* keep items from shrinking */
+    white-space: nowrap;
+    flex: 0 0 auto;
   }
 }
 
