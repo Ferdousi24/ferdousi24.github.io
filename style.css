@@ -512,3 +512,21 @@ body {
     flex: 0 0 auto; /* keep items from shrinking */
   }
 }
+
+/* Tablet View Navbar Fix */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .navbar ul {
+    display: flex;
+    justify-content: center; /* keep items centered */
+    padding: 0 15px; /* smaller horizontal padding */
+    margin: 0;
+    overflow-x: auto; /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+    gap: 15px; /* spacing between items */
+  }
+
+  .navbar li {
+    white-space: nowrap; /* prevent text wrap */
+    flex: 0 0 auto; /* don't shrink items */
+  }
+}
