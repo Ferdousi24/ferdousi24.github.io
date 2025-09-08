@@ -447,17 +447,22 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.3s;
 }
 
+/* Make navbar scrollable on small screens */
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* align items to left */
   margin: 0;
-  padding: 0;
+  padding: 0 10px; /* small horizontal padding */
+  overflow-x: auto; /* allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  gap: 15px; /* space between items */
 }
 
 .navbar li {
-  margin: 0 15px;
+  white-space: nowrap; /* prevent text wrapping */
 }
+
 
 
 
