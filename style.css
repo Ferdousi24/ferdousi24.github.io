@@ -499,7 +499,7 @@ body {
 
 @media(max-width: 599px) {
   .container { flex-direction: column; }
-  .right-column img { width: 80px; height: 80px; }
+  .right-column img { width: 100px; height: 100px; }
   .contact-icons a { font-size: 1.3em; }
   .project { padding: 12px; }
   .projects { grid-template-columns: 1fr; }
