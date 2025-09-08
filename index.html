@@ -11,15 +11,18 @@
 </head>
 <body>
 <!-- navigation bar -->
-<nav class="navbar">
-  <ul>
-    <li><a href="#intro">Intro</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#research">Research</a></li>
-  </ul>
-</nav>
+<!-- Top Right Menu -->
+<div class="topbar">
+  <button id="menuBtn" class="menu-btn">☰</button>
+
+  <div id="dropdown" class="dropdown">
+    <a href="#intro">Intro</a>
+    <a href="#projects">Projects</a>
+  
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+  </div>
+</div>
 
   <div class="container">
 
@@ -28,7 +31,7 @@
       <div class="about" id="intro"></div>
       <img src="images/avatar.jpg" alt="Profile Picture">
       <h1>Ferdousi Sultana</h1>
-      <p class="title"> Data & Geospatial Scientist | GIS • Remote Sensing • Machine Learning
+      <p class="title"> Environmental & Geospatial Data Analyst  | GIS • Remote Sensing • Machine Learning
  </p>
 
       <!-- Social/Contact Icons -->
@@ -45,7 +48,7 @@
       <!-- About Section -->
       <h2 class="section-title">About Me</h2>
       <div class="about" id="about">
-        <p>Passionate data scientist with experience in GIS, remote sensing, and machine learning. Transforming complex data into actionable insights for environment, technology, and sustainable development.</p>
+        <p>Passionate Environmental & Geospatial Data Analyst with experience in GIS, remote sensing, and machine learning. Transforming complex data into actionable insights for environment, technology, and sustainable development.</p>
       </div>
 
       <!-- Skills Section -->
@@ -150,7 +153,7 @@
     </div>
 
   <div class="job">
-    <h5>Educator – University in Bangladesh (2019 – 2023)</h5>
+    <h5>Assistant Professor (GIS & Environmental Sciences focus) – University in Bangladesh (2019 – 2023)</h5>
     <p class="description">Taught geography and environmental science courses; guided students in GIS projects.</p>
     <div class="tools-used">
       <div class="tool">Teaching</div>
@@ -289,7 +292,7 @@ loadMoreBtn.addEventListener("click", () => {
   loadMoreBtn.style.display = "none"; // hide button after loading
 });
 </script>
-
+<script src="script.js"></script>
 
 
 
