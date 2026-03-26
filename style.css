@@ -430,42 +430,70 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95); /* white with slight transparency */;
-  padding: 10px 0;
-  z-index: 1000;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
-}
-
-.navbar a {
-  color: #333;             /* dark text so it’s visible */
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+body {
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.navbar li {
-  margin: 0 15px;
+/* Top right container */
+.topbar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* Button */
+.menu-btn {
+  font-size: 24px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dropdown hidden */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Show dropdown */
+.dropdown.show {
+  display: flex;
+}
+
+/* Links */
+.dropdown a {
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown a:hover {
+  background: #00bcd4;
+  color: white;
 }
 
 
 
-
-.navbar a:hover {
-  color: #00bcd4;
+/* Sections */
+.section {
+  height: 100vh;
+  padding: 60px;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -494,3 +522,25 @@ body {
   .project { padding: 12px; }
   .projects { grid-template-columns: 1fr; }
 }
+
+/* Mobile View Navbar Fix */
+@media (max-width: 599px) {
+  .navbar ul {
+    display: flex;
+    justify-content: flex-start; /* align items to left */
+    padding: 0 10px; /* small horizontal padding */
+    margin: 0;
+    overflow-x: auto; /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+    gap: 10px; /* spacing between items */
+  }
+
+  .navbar li {
+    white-space: nowrap; /* prevent text from wrapping */
+    flex: 0 0 auto; /* keep items from shrinking */
+  }
+}
+
+
+
+

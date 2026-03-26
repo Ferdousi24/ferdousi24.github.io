@@ -1,16 +1,22 @@
 const menuBtn = document.getElementById("menuBtn");
 const dropdown = document.getElementById("dropdown");
+const links = document.querySelectorAll(".dropdown a");
 
-// toggle menu
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
+// Toggle menu
+menuBtn.addEventListener("click", () => {
   dropdown.classList.toggle("show");
 });
 
-// close when clicking outside
-document.addEventListener("click", () => {
-  dropdown.classList.remove("show");
+// Close on link click
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    dropdown.classList.remove("show");
+  });
 });
 
-// smooth scroll already works if you have:
-document.documentElement.style.scrollBehavior = "smooth";
+// Close when clicking outside
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".topbar")) {
+    dropdown.classList.remove("show");
+  }
+});
