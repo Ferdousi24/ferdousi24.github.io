@@ -18,9 +18,11 @@
   <div id="dropdown" class="dropdown">
     <a href="#intro">Intro</a>
     <a href="#projects">Projects</a>
-  
+  <a href="#education">Relevant Experience</a>
     <a href="#education">Education</a>
-    <a href="#research">Research</a>
+    <a href="#research">Research & Publications</a>
+    <a href="#certifications">Certifications & Training</a>
+
   </div>
 </div>
 
@@ -49,6 +51,10 @@
       <h2 class="section-title">About Me</h2>
       <div class="about" id="about">
         <p>Passionate Environmental & Geospatial Data Analyst with experience in GIS, remote sensing, and machine learning. Transforming complex data into actionable insights for environment, technology, and sustainable development.</p>
+       <p>
+    Open to opportunities and collaborations in geospatial and environmental analysis, remote sensing, and GIS.
+   
+  </p>
       </div>
 
       <!-- Skills Section -->
@@ -64,16 +70,7 @@
         <div class="skill">Google Earth Engine</div>
       </div>
 
-      <!-- Certifications Section -->
-      <h2 class="section-title">Certifications</h2>
-      <div class="certifications">
-        <div class="cert">Machine Learning – DataCamp</div>
-        <div class="cert">GIS & Remote Sensing – ESRI</div>
-        <div class="cert">Power BI – Linkedin Learning</div>
-        <div class="cert">Python for Data Science – Linkedin Learning</div>
-        <div class="cert">SQL & Databases – Linkedin Learning</div>
-        <a href="certifications.html" target="_blank" class="view-all">View All Certifications</a>
-      </div>
+     
     </div>
 
     <!-- Right Column: Projects -->
@@ -190,12 +187,24 @@
     <p class="description">Remote Sensing-based Land Cover Classification – Google Earth Engine(In preparation)</p>
      <p class="description">
   <strong>Other Environmental Research:</strong> Conducted research on wastewater management and water quality monitoring. 
-  <a href="https://scholar.google.com/citations?user=Et6dJ7oAAAAJ&hl=en" target="_blank">View on Google Scholar</a>. 
+  <strong><a href="https://scholar.google.com/citations?user=Et6dJ7oAAAAJ&hl=en" target="_blank">View on Google Scholar</a></strong>. 
   <em>(Not directly related to GIS or remote sensing)</em> 
   
 </p>
 
+     <!-- Certifications Section -->
+      <h2 class="section-title">Certifications & Training</h2>
+      <div class="certifications">
+       <div class="edu"> <!-- reuse same class as Education -->
+    <p class="description"> Esri Academy, LinkedIn Learning & DataCamp | 2023–present</p>
+    <p class="description">
+Completed extensive training in GIS and remote sensing, with focus on: Spatial Analysis (ArcGIS Pro, QGIS), ArcGIS Online, Remote Sensing & Imagery Analysis, Python for Geospatial Applications.</p>
+     <p class="description">
+  <strong> <a href="certifications.html" target="_blank" >View All Courses</a></strong> 
+
+  
         
+      </div>    
   </div>
 </section>
 
@@ -215,7 +224,7 @@ const extraProjects = [
   {
     title: "Spatial Database Management with PostgreSQL/PostGIS: Ottawa Neighborhood Case Study",
     desc: "Created a spatially enabled PostgreSQL database with PostGIS to manage, validate, and analyze Ottawa neighborhood data, performing reprojections and distance calculations while connecting to QGIS for visualization.",
-    tools: ["ArcGIS online"],
+    tools: ["PostgreSQL", "PostGIS", "QGIS"],
     img: "images/pic06.jpg",
     link: "PostgreSQL and PostGIS.html"
   },
