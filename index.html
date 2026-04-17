@@ -78,23 +78,12 @@
       <h2 class="section-title">Projects</h2>
       <div class="projects" id="projects">
       
-
-        <!-- Project 1 -->
-        <div class="project">
-          <img src="images/pic02.jpg" alt="#" class="project-img">
-          <h3>Methane Concentration Trends in Ottawa </h3>
-          <div class="tools-used">
-            <div class="tool">Python</div>
-            
-          </div>
-          <p class="description">Analyzed spatial and temporal methane concentration trends in Ottawa using Sentinel-5P satellite data, identifying peak emission months.</p>
-          <a href="methane.html" class="details">Read More</a>
-        </div>
+       
 
         <!-- Project 2 -->
         <div class="project">
           <img src="images/pic04.jpg" alt="#" class="project-img">
-          <h3>Image Segmentation of Squirrels (U-Net Architecture)</h3>
+          <h3>Image Segmentation using deep learning (U-Net Architecture)</h3>
           <div class="tools-used">
             <div class="tool">Python</div>
             <div class="tool">Machine Learning</div>
@@ -128,7 +117,9 @@
           <a href="network.html" class="details">Read More</a>
         </div>
       </div>
- 
+ <!-- Project 1 -->
+        
+
       
      <!-- Load More Button -->
     <button id="load-more">Load More Projects</button>
@@ -258,6 +249,7 @@ const extraProjects = [
     img: "images/pic12.jpg",
     link: "dashboard.html"
   },
+
   {
     title: "Squirrel Sightings: Heat Map and Choropleth Analysis in Ottawa (ArcGIS Pro)",
     desc: "Processed and visualized squirrel sighting data in ArcGIS Pro, creating heat maps and choropleth maps to analyze distribution patterns across Ottawa neighborhoods.",
@@ -265,6 +257,13 @@ const extraProjects = [
     img: "images/pic13.jpg",
     link: "squirrels.html"
   },
+  {
+  title: "Methane Concentration Trends in Ottawa (Sentinel-5P Analysis)",
+  desc: "Analyzed spatial and temporal methane concentration trends in Ottawa using Sentinel-5P satellite data, identifying seasonal patterns and emission hotspots through grid-based analysis.",
+  tools: ["Python"],
+  img: "images/pic02.jpg",
+  link: "methane.html"
+},
   {
     title: "Surface Water Detection in Ottawa - NDWI",
     desc: "Used Google Earth Engine to analyze surface water bodies in Ottawa with NDWI, leveraging Sentinel-2 imagery for spatial visualization.",
