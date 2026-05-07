@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deep learning_Squirrels</title>
+  <title>Deep Learning | Squirrel Image Segmentation</title>
+
   <style>
     body {
       background-color: #000;
@@ -18,7 +19,7 @@
       text-align: center;
     }
 
-    ul, ol {
+    ul {
       padding-left: 20px;
     }
 
@@ -35,10 +36,10 @@
     img {
       margin-top: 10px;
       margin-bottom: 20px;
-      max-width: 45%;
+      max-width: 60%;
       height: auto;
       border: 2px solid #fff;
-      border-radius: 4px;
+      border-radius: 6px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -53,35 +54,114 @@
       width: 85%;
       margin: auto;
     }
+
+    .github-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 12px 18px;
+      background-color: #00bcd4;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .github-btn:hover {
+      background-color: #26c6da;
+    }
   </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Project Description</h1>
-        <p>As part of my internship in the Department of Geography, Environment, and Geomatics at the University of Ottawa, I worked on a project using the U-Net architecture for binary image segmentation. This deep learning model was employed to differentiate squirrel images based on color, specifically focusing on black and brown color variants.</p>
-        
-        <h2>Key Highlights:</h2>
-        <ul>
-         <li><strong>Dataset Preparation and Preprocessing:</strong></li>
-                <ul>
-                    <li>Data Collection: Collected 500 images of squirrels.</li>
-                    <li>Masking: Applied masking techniques using OpenCV to create binary masks for the images. This involved using threshold values to segment the squirrels from the background.</li>
-                    <li>Preprocessing: Conducted preprocessing steps to enhance the dataset quality. This included resizing images to a consistent size, normalizing pixel values, and augmenting data to improve model robustness.</li>
-                </ul>
-            </li>
-        <li><strong>Model Implementation:</strong></li>
-             <ul>
-                    <li>Utilized the U-Net architecture to develop a model that accurately identifies and segments squirrels across various backgrounds.</li>
-                </ul>
-            </li>
-            
-            <li><Strong>Segmentation:</Strong></li>
-                <ul>
-                    <li>Loss Function: Used an appropriate loss function for binary segmentation, such as binary cross-entropy.</li>
-                    <li>Evaluation: Monitored performance metrics like accuracy and Intersection over Union (IoU) to assess the model's effectiveness.</li>
-                </ul>
-            </li>
-        </ul>
+
+<div class="container">
+
+    <h1>Semantic Segmentation of Wildlife Images using U-Net</h1>
+
+    <p>
+    As part of my internship in the Department of Geography, Environment, and Geomatics at the University of Ottawa, 
+    I developed a geospatial deep learning pipeline using the U-Net architecture for pixel-wise semantic segmentation of squirrel images. 
+    The model focuses on separating squirrel regions from complex natural backgrounds while accounting for variations in color (black and brown squirrels).
+    </p>
+
+    <!-- 🔗 GitHub Link -->
+    <a href="https://github.com/Ferdousi24/Deep-Learning" target="_blank" class="github-btn">
+      View Project on GitHub
+    </a>
+
+    <h2>Key Highlights</h2>
+
+    <ul>
+
+        <li>
+            <strong>Dataset Preparation & Preprocessing</strong>
+            <ul>
+                <li>Collected and curated 500 wildlife images for training and evaluation.</li>
+                <li>Generated pixel-level segmentation masks using OpenCV-based masking techniques.</li>
+                <li>Applied preprocessing steps including resizing, normalization, and data augmentation to improve model robustness.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Deep Learning Model Development</strong>
+            <ul>
+                <li>Implemented a U-Net architecture for semantic segmentation tasks.</li>
+                <li>Designed the model to perform pixel-wise separation of squirrel foreground from background environments.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Training & Evaluation</strong>
+            <ul>
+                <li>Used Binary Cross-Entropy loss function for optimization.</li>
+                <li>Evaluated model performance using Intersection over Union (IoU) as the primary metric.</li>
+                <li>Analyzed probability-based output masks (0–1 range) to assess prediction confidence.</li>
+            </ul>
+        </li>
+  <h2>Tools & Technologies</h2>
+
+<div class="tools-used">
+
+    <div>
+        <strong>Programming:</strong>
+        <div class="tool">Python</div>
     </div>
+
+    <div>
+        <strong>Deep Learning:</strong>
+        <div class="tool">TensorFlow</div>
+        <div class="tool">Keras</div>
+    </div>
+
+    <div>
+        <strong>Computer Vision:</strong>
+        <div class="tool">OpenCV</div>
+    </div>
+
+    <div>
+        <strong>Data Processing:</strong>
+        <div class="tool">NumPy</div>
+        <div class="tool">Pandas</div>
+    </div>
+
+    <div>
+        <strong>Visualization:</strong>
+        <div class="tool">Matplotlib</div>
+    </div>
+
+</div>
+    </ul>
+
+    <h2>Results</h2>
+
+    <ul>
+        <li><strong>Intersection over Union (IoU):</strong> 0.79, indicating strong overlap between predicted and ground truth segmentation masks.</li>
+        <li><strong>Model Performance:</strong> Successfully learned to separate squirrel foreground regions from complex natural backgrounds.</li>
+        <li><strong>Output Quality:</strong> Produced stable probability maps with clear pixel-level distinction between foreground and background.</li>
+    </ul>
+
+</div>
+
 </body>
 </html>
