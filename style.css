@@ -526,14 +526,22 @@ body {
 /* ---------------- Mobile View ---------------- */
 @media (max-width: 599px) {
 
-  .container {
+   .container {
     display: flex;
     flex-direction: column;
+
     width: 100%;
-    margin: 15px 0;
-    padding: 0 10px;
-    gap: 15px;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 10px;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    align-items: stretch; /* IMPORTANT FIX */
   }
+
 
   .left-column,
   .right-column {
