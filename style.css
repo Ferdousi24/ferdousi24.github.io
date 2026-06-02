@@ -1,4 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .profile {
   text-align: left;
   margin-bottom: 20px;
@@ -492,7 +501,7 @@ body {
 /* Sections */
 .section {
   height: 100vh;
-  padding: 60px;
+  padding: 20px;
 }
 html {
   scroll-behavior: smooth;
@@ -515,14 +524,47 @@ body {
 }
 
 /* ---------------- Mobile View ---------------- */
-@media(max-width: 599px) {
-  .container { flex-direction: column; }
-  .left-column img { width: 100px; height: 100px; }
-  .contact-icons a { font-size: 1.3em; }
-  .project { padding: 12px; }
-  .projects { grid-template-columns: 1fr; }
-}
+@media (max-width: 599px) {
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    flex: none;
+    margin: 0;
+  }
+
+  .left-column img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    padding: 12px;
+  }
+
+  .project-img,
+  .project-img-arcpy {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-icons a {
+    font-size: 1.3em;
+  }
+}
 /* Mobile View Navbar Fix */
 @media (max-width: 599px) {
   .navbar ul {
