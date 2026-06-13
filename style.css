@@ -602,3 +602,40 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+
+.ongoing-work-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: #f4f8f7;
+  border-left: 4px solid #2e7d32;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.ongoing-work-banner h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2d2a;
+}
+
+.ongoing-work-banner .dot {
+  width: 10px;
+  height: 10px;
+  background: #2e7d32;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+/* blinking live effect */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
