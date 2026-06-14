@@ -3,58 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Ferdousi Sultana | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
-<!-- navigation bar -->
-<!-- Top Right Menu -->
-<div class="topbar">
-  <button id="menuBtn" class="menu-btn">☰</button>
 
-  <div id="dropdown" class="dropdown">
-    <a href="#intro">Intro</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Relevant Experience</a>
-    <a href="#education">Education</a>
-    <a href="#certifications">Certifications & Training</a>
-    <a href="#research">Research & Publications</a>
+  <!-- Menu -->
+  <nav id="menu">
+    <div class="inner">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Professional Experience.html">Professional Experience</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="CertificationsA.html">Certifications</a></li>
+        <li><a href="research & publication.html">Research & Publications</a></li>
+      </ul>
+    </div>
+    <a class="close" href="#">Close</a>
+  </nav>
 
+  <!-- Menu Toggle Button -->
+  <div class="topbar">
+    <a href="#menu" class="menu-btn">&#9776;</a>
   </div>
-</div>
 
   <div class="container">
 
     <!-- Left Column -->
     <div class="left-column">
-      <div class="about" id="intro"></div>
       <img src="images/avatar.jpg" alt="Profile Picture">
       <h1>Ferdousi Sultana</h1>
-      <p class="title"> Environmental GIS Analyst  | GIS • Remote Sensing • Machine Learning
- </p>
+      <p class="title">Environmental GIS Analyst | GIS • Remote Sensing • Machine Learning</p>
 
       <!-- Social/Contact Icons -->
       <div class="contact-icons">
         <a href="mailto:sultana.ferdousi@outlook.com" target="_blank">
-  <i class="fas fa-envelope"></i>
-</a>
-
-      <a href="https://www.linkedin.com/in/ferdousi-sultana/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Ferdousi24"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/yourtwitter/"><i class="fab fa-twitter"></i></a>
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ferdousi-sultana/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Ferdousi24">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/yourtwitter/">
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
 
       <!-- About Section -->
       <h2 class="section-title">About Me</h2>
       <div class="about" id="about">
         <p>Environmental GIS Analyst with experience in GIS, remote sensing, and machine learning. Transforming complex data into actionable insights for environment, technology, and sustainable development.</p>
-       <p>
-    Open to opportunities and collaborations in geospatial and environmental analysis, remote sensing, and GIS.
-   
-  </p>
+        <p>Open to opportunities and collaborations in geospatial and environmental analysis, remote sensing, and GIS.</p>
       </div>
 
       <!-- Skills Section -->
@@ -69,29 +73,23 @@
         <div class="skill">Power BI</div>
         <div class="skill">Google Earth Engine</div>
       </div>
-
-     
     </div>
 
-    <!-- Right Column: Projects -->
+    <!-- Right Column -->
     <div class="right-column">
-      
-    <div class="current-focus-banner">
-  <div class="ongoing-work-banner">
-  <span class="dot"></span>
-  <h3>Ongoing Work: Environmental data analysis • Remote sensing with Google Earth Engine • Python geospatial automation</h3>
 
-     
-</div>
-    <div class="right-column">
+      <!-- Ongoing Work Banner -->
+      <div class="ongoing-work-banner">
+        <span class="dot"></span>
+        <h3>Ongoing Work: Environmental data analysis • Remote sensing with Google Earth Engine • Python geospatial automation</h3>
+      </div>
+
       <h2 class="section-title">Projects</h2>
       <div class="projects" id="projects">
-      
-       
 
-        <!-- Project 2 -->
+        <!-- Project 1 -->
         <div class="project">
-          <img src="images/pic04.jpg" alt="#" class="project-img">
+          <img src="images/pic04.jpg" alt="U-Net Deep Learning" class="project-img">
           <h3>Image Segmentation using deep learning (U-Net Architecture)</h3>
           <div class="tools-used">
             <div class="tool">Python</div>
@@ -101,269 +99,161 @@
           <a href="deep learning.html" class="details">Read More</a>
         </div>
 
-       <!-- Project 3 -->
+        <!-- Project 2 -->
         <div class="project">
-          <img src="images/pic14.jpg" alt="#" class="project-img">
-          <h3>Automated Site Selection for Wastewater Treatment Plant </h3>
+          <img src="images/pic14.jpg" alt="Automated Site Selection" class="project-img">
+          <h3>Automated Site Selection for Wastewater Treatment Plant</h3>
           <div class="tools-used">
             <div class="tool">ArcGIS Pro</div>
-             <div class="tool">ModelBuilder</div>
-            
+            <div class="tool">ModelBuilder</div>
           </div>
           <p class="description">Automated site selection for a wastewater treatment plant using ArcGIS Pro ModelBuilder by applying multiple spatial criteria, including proximity to rivers, city limits, and exclusion zones.</p>
           <a href="modelbuilder.html" class="details">Read More</a>
         </div>
-        <!-- Project 5 -->
-<div class="project">
-          <img src="images/classification layout.png" alt="#" class="project-img">
-          <h3>
-  Land Cover Classification Using Satellite Imagery 
-  <em></em>
-</h3>
+
+        <!-- Project 3 -->
+        <div class="project">
+          <img src="images/classification layout.png" alt="Land Cover Classification" class="project-img">
+          <h3>Land Cover Classification Using Satellite Imagery</h3>
           <div class="tools-used">
             <div class="tool">QGIS</div>
-             <div class="tool">Supervised Classification</div>
-            
+            <div class="tool">Supervised Classification</div>
           </div>
           <p class="description">Supervised land cover classification using satellite imagery in QGIS.</p>
           <a href="RS_Lakehead.html" class="details">Read More</a>
         </div>
-          
-        <div class="project">
-    <img src="images/arcpymapt.png" alt="ArcPy GIS Automation Project" class="project-img-arcpy">
-    <h3>GIS Automation using ArcPy & ArcGIS Pro </h3>
-        <div class="tools-used">
-        <div class="tool">Python</div>
-        <div class="tool">ArcPy</div>
-        <div class="tool">ArcGIS Pro</div>
-        <div class="tool">GIS Automation</div>
-    </div>
-    
 
-      <p class="description">
-        Developed an ArcPy-based GIS automation workflow to programmatically manipulate map layout elements in ArcGIS Pro.
-    </p><a href="arcpy.html" class="details">Read More</a>
-
-</div>
+        <!-- Project 4 -->
         <div class="project">
-          <img src="images/pic10.jpg" alt="#" class="project-img">
-          <h3>Vehicle Routing Optimization for GHG Reduction </h3>
+          <img src="images/arcpymapt.png" alt="ArcPy GIS Automation" class="project-img-arcpy">
+          <h3>GIS Automation using ArcPy & ArcGIS Pro</h3>
+          <div class="tools-used">
+            <div class="tool">Python</div>
+            <div class="tool">ArcPy</div>
+            <div class="tool">ArcGIS Pro</div>
+            <div class="tool">GIS Automation</div>
+          </div>
+          <p class="description">Developed an ArcPy-based GIS automation workflow to programmatically manipulate map layout elements in ArcGIS Pro.</p>
+          <a href="arcpy.html" class="details">Read More</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project">
+          <img src="images/pic10.jpg" alt="Vehicle Routing Optimization" class="project-img">
+          <h3>Vehicle Routing Optimization for GHG Reduction</h3>
           <div class="tools-used">
             <div class="tool">ArcGIS Pro</div>
-            
           </div>
           <p class="description">Used ArcGIS Pro to optimize delivery routes for emission reduction, applying network analysis and VRP tools to improve efficiency and minimize environmental impact.</p>
           <a href="network.html" class="details">Read More</a>
         </div>
-      
+
       </div>
- <!-- Project 1 -->
-        
 
-      
-     <!-- Load More Button -->
-    <button id="load-more">Load More Projects</button>
-  
-</div> 
-    
-  <!-- Experience / Work History -->
-     
-    <h2 class="section-title"> Relevant Experience</h2>
-       <div class="experience" id="experience">
-    <div class="job">
-    <h5> Environmental Data Analyst –
-      Environmental Image Analysis & Wildlife Detection Pipeline –University of Ottawa (May 2024 – Aug 2024)                               
-    </h5>
-    <p class="description">Developed a geospatial deep learning pipeline using U-Net for pixel-wise semantic segmentation of squirrel images, separating foreground from complex backgrounds while accounting for color variations.</p>
-    <div class="tools-used">
-      <div class="tool">Python</div>
-      <div class="tool">Deep Learning</div>
-      <div class="tool">U-Net</div>
-      <div class="tool">Computer Vision</div>
-      <div class="tool">Image Segmentation</div>
-    </div>
-    </div>
-    </div>   
-  <div class="job">
-    <h5>GIS & Environmental Data Analyst – Environmental Systems & Applied Geospatial Research  | University in Bangladesh (Feb 2019– Aug 2023) </h5>
-    <p class="description">Worked across GIS instruction, environmental geospatial analysis, and research-based spatial data workflows, supporting both academic training and applied GIS projects using ArcGIS Pro and QGIS.</p>
-    <div class="tools-used">
-<div class="tool">ArcGIS Pro</div>
-<div class="tool">QGIS</div>
-<div class="tool">Spatial Analysis</div>
-<div class="tool">Remote Sensing</div>
-<div class="tool">Environmental Data Analysis</div>
-<div class="tool">Geodatabases</div>
-<div class="tool">Data QA/QC</div>
-    </div>
-    
-  
-  
-  </section>
-
-  <!-- Education -->
-  
-  <section class="education" id="education"></section>
-  <h2 class="section-title">Education</h2>
-    <div class="edu">
-    <h5>Master’s in Geography – University of Ottawa, Canada</h5>  
-     <p class="description">Learned GIS, Remote Sensing, Spatial Analysis, and Environmental Data Modeling.</p>
+      <!-- Load More Button -->
+      <button id="load-more">Load More Projects</button>
 
     </div>
-  <div class="edu">
-   <h5>Master’s & Bachelor’s in Environmental Science – Jahangirnagar University, Bangladesh</h5> 
-    <p class="description">Studied Environmental Assessment, Water Quality Analysis, and Ecosystem Management.</p>
-  </div>
-  </div>
-  </section>
-
-  
-
-     <!-- Certifications Section -->
-     
-      <section class="certifications" id="certifications"></section>
-      <h2 class="section-title">Certifications & Training</h2>
-     <div class="certifications">
-  <div class="edu">
-    <p class="description"><strong>Microcredential in Remote Sensing</strong> – Lakehead University | Apr 2026 – May 2026</p>
-    <p class="description">Training in satellite imagery analysis, image pre-processing, classification, and environmental applications using Earth observation data.</p>
-  </div>
-    <p class="description"><strong>Graduate Exchange Coursework in Geomatics</strong> – Carleton University | Jan 2024 – Apr 2024</p>
-
-    <p class="description"><strong>Professional Training</strong> – Esri Academy, DataCamp, LinkedIn Learning | 2023–Present</p>
-    <p class="description">Focused on GIS, spatial analysis (ArcGIS Pro, QGIS), remote sensing, and Python for geospatial applications.</p>
   </div>
 
-
-     <p class="description">
-  <strong> <a href="certifications.html" target="_blank" >View All Courses</a></strong> 
-
-  
-        
-      </div> 
-    <!-- Publications / Research -->
-      
-   <section class="research" id="research"></section>
-  <h2 class="section-title">Research & Publications</h2>
-
-  <div class="edu"> <!-- reuse same class as Education -->
-    <p class="description"> Spatial analysis of groundwater– Environmental Monitoring(under review)</p>
-    <p class="description">Remote Sensing-based Land Cover Classification – Google Earth Engine(In preparation)</p>
-     <p class="description">
-  <strong>Other Environmental Research:</strong> Conducted research on wastewater management and water quality monitoring. 
-  <strong><a href="https://scholar.google.com/citations?user=Et6dJ7oAAAAJ&hl=en" target="_blank">View on Google Scholar</a></strong>. 
-  <em>(Not directly related to GIS or remote sensing)</em> 
-  
-</p>   
-  </div>
-</section>
-
-
-</div>
-
-<!-- JavaScript for Load More Projects -->
+  <!-- Load More Script -->
   <script>
-const extraProjects = [
-   {
-    title: "Spatial Database Management with PostgreSQL/PostGIS: Ottawa Neighborhood Case Study",
-    desc: "Created a spatially enabled PostgreSQL database with PostGIS to manage, validate, and analyze Ottawa neighborhood data, performing reprojections and distance calculations while connecting to QGIS for visualization.",
-    tools: ["PostgreSQL", "PostGIS", "QGIS"],
-    img: "images/pic06.jpg",
-    link: "PostgreSQL and PostGIS.html"
-  },
-  
-  {
-    title: "Mapping Public Facilities and Spatial Analysis of Fire Stations",
-    desc: "Mapped and analyzed the spatial distribution of public facilities in Ottawa using QGIS.",
-    tools: ["QGIS"],
-    img: "images/pic03.jpg",
-    link: "QGIS.html"
-  },
- 
-  {
-    title: "Web Mapping",
-    desc: "Developed an interactive web map using ArcGIS Pro and ArcGIS Online, processing spatial data and building an Instant App with search, filtering, and user-friendly features.",
-    tools: ["ArcGIS Online"],
-    img: "images/pic08.jpg",
-    link: "web.html"
-  },
-  {
-    title: "Landfill Sites and Population Density Analysis in Dhaka",
-    desc: "Conducted geospatial analysis of two major landfill sites in Dhaka, mapping land cover and estimating population exposure within 2 km buffers using ArcGIS and open-source datasets.",
-    tools: ["ArcGIS Pro"],
-    img: "images/pic05.jpg",
-    link: "waste.html"
-  },
-  {
-    title: "Designing and Publishing Surveys",
-    desc: "Designed, published, and managed interactive surveys using ArcGIS Survey123 to collect real-time field data through web and mobile interfaces.",
-    tools: ["ArcGIS Survey123"],
-    img: "images/survey.jpg",
-    link: "survey.html"
-  },
-  {
-    title: "Interactive ArcGIS Dashboard for Traffic Collisions in Ottawa (2017)",
-    desc: "Analyzed and visualized traffic collision data in ArcGIS Online, creating an interactive web map and dashboard to highlight spatial patterns, hotspots, and key metrics for decision-making.",
-    tools: ["ArcGIS Online"],
-    img: "images/pic12.jpg",
-    link: "dashboard.html"
-  },
+    const extraProjects = [
+      {
+        title: "Spatial Database Management with PostgreSQL/PostGIS: Ottawa Neighborhood Case Study",
+        desc: "Created a spatially enabled PostgreSQL database with PostGIS to manage, validate, and analyze Ottawa neighborhood data, performing reprojections and distance calculations while connecting to QGIS for visualization.",
+        tools: ["PostgreSQL", "PostGIS", "QGIS"],
+        img: "images/pic06.jpg",
+        link: "PostgreSQL and PostGIS.html"
+      },
+      {
+        title: "Mapping Public Facilities and Spatial Analysis of Fire Stations",
+        desc: "Mapped and analyzed the spatial distribution of public facilities in Ottawa using QGIS.",
+        tools: ["QGIS"],
+        img: "images/pic03.jpg",
+        link: "QGIS.html"
+      },
+      {
+        title: "Web Mapping",
+        desc: "Developed an interactive web map using ArcGIS Pro and ArcGIS Online, processing spatial data and building an Instant App with search, filtering, and user-friendly features.",
+        tools: ["ArcGIS Online"],
+        img: "images/pic08.jpg",
+        link: "web.html"
+      },
+      {
+        title: "Landfill Sites and Population Density Analysis in Dhaka",
+        desc: "Conducted geospatial analysis of two major landfill sites in Dhaka, mapping land cover and estimating population exposure within 2 km buffers using ArcGIS and open-source datasets.",
+        tools: ["ArcGIS Pro"],
+        img: "images/pic05.jpg",
+        link: "waste.html"
+      },
+      {
+        title: "Designing and Publishing Surveys",
+        desc: "Designed, published, and managed interactive surveys using ArcGIS Survey123 to collect real-time field data through web and mobile interfaces.",
+        tools: ["ArcGIS Survey123"],
+        img: "images/survey.jpg",
+        link: "survey.html"
+      },
+      {
+        title: "Interactive ArcGIS Dashboard for Traffic Collisions in Ottawa (2017)",
+        desc: "Analyzed and visualized traffic collision data in ArcGIS Online, creating an interactive web map and dashboard to highlight spatial patterns, hotspots, and key metrics for decision-making.",
+        tools: ["ArcGIS Online"],
+        img: "images/pic12.jpg",
+        link: "dashboard.html"
+      },
+      {
+        title: "Squirrel Sightings: Heat Map and Choropleth Analysis in Ottawa (ArcGIS Pro)",
+        desc: "Processed and visualized squirrel sighting data in ArcGIS Pro, creating heat maps and choropleth maps to analyze distribution patterns across Ottawa neighborhoods.",
+        tools: ["ArcGIS Pro"],
+        img: "images/pic13.jpg",
+        link: "squirrels.html"
+      },
+      {
+        title: "Methane Concentration Trends in Ottawa (Sentinel-5P Analysis)",
+        desc: "Analyzed spatial and temporal methane concentration trends in Ottawa using Sentinel-5P satellite data, identifying seasonal patterns and emission hotspots through grid-based analysis.",
+        tools: ["Python"],
+        img: "images/pic02.jpg",
+        link: "methane.html"
+      },
+      {
+        title: "Surface Water Detection in Ottawa - NDWI",
+        desc: "Used Google Earth Engine to analyze surface water bodies in Ottawa with NDWI, leveraging Sentinel-2 imagery for spatial visualization.",
+        tools: ["Google Earth Engine"],
+        img: "images/NDWI.jpg",
+        link: "NDWI.html"
+      },
+      {
+        title: "Squirrel Sightings Tracker",
+        desc: "Developed a Python application to collect and upload squirrel sighting data to Firebase Realtime Database, enabling real-time cloud-based storage and geospatial data management.",
+        tools: ["Firebase", "Python"],
+        img: "images/pic15.jpg",
+        link: "firebase.html"
+      }
+    ];
 
-  {
-    title: "Squirrel Sightings: Heat Map and Choropleth Analysis in Ottawa (ArcGIS Pro)",
-    desc: "Processed and visualized squirrel sighting data in ArcGIS Pro, creating heat maps and choropleth maps to analyze distribution patterns across Ottawa neighborhoods.",
-    tools: ["ArcGIS Pro"],
-    img: "images/pic13.jpg",
-    link: "squirrels.html"
-  },
-  {
-  title: "Methane Concentration Trends in Ottawa (Sentinel-5P Analysis)",
-  desc: "Analyzed spatial and temporal methane concentration trends in Ottawa using Sentinel-5P satellite data, identifying seasonal patterns and emission hotspots through grid-based analysis.",
-  tools: ["Python"],
-  img: "images/pic02.jpg",
-  link: "methane.html"
-},
-  {
-    title: "Surface Water Detection in Ottawa - NDWI",
-    desc: "Used Google Earth Engine to analyze surface water bodies in Ottawa with NDWI, leveraging Sentinel-2 imagery for spatial visualization.",
-    tools: ["Google Earth Engine"],
-    img: "images/NDWI.jpg",
-    link: "NDWI.html"
-  },
-  {
-    title: "Squirrel Sightings Tracker",
-    desc: "Developed a Python application to collect and upload squirrel sighting data to Firebase Realtime Database, enabling real-time cloud-based storage and geospatial data management.",
-    tools: ["Firebase", "Python"],
-    img: "images/pic15.jpg",
-    link: "firebase.html"
-  }
-];
+    const loadMoreBtn = document.getElementById("load-more");
+    const projectList = document.getElementById("projects");
 
-const loadMoreBtn = document.getElementById("load-more");
-const projectList = document.getElementById("projects");
+    loadMoreBtn.addEventListener("click", () => {
+      extraProjects.forEach(p => {
+        const div = document.createElement("div");
+        div.classList.add("project");
+        div.innerHTML = `
+          <img src="${p.img}" alt="${p.title}" class="project-img">
+          <h3>${p.title}</h3>
+          <div class="tools-used">
+            ${p.tools.map(t => `<div class="tool">${t}</div>`).join('')}
+          </div>
+          <p class="description">${p.desc}</p>
+          <a href="${p.link}" class="details">Read More</a>
+        `;
+        projectList.appendChild(div);
+      });
+      loadMoreBtn.style.display = "none";
+    });
+  </script>
 
-loadMoreBtn.addEventListener("click", () => {
-  extraProjects.forEach(p => {
-    const div = document.createElement("div");
-    div.classList.add("project");
-    div.innerHTML = `
-      <img src="${p.img}" alt="${p.title}" class="project-img">
-      <h3>${p.title}</h3>
-      <div class="tools-used">
-        ${p.tools.map(t => `<div class="tool">${t}</div>`).join('')}
-      </div>
-      <p class="description">${p.desc}</p>
-      <a href="${p.link}" target="_blank" class="details">Read More</a>
-    `;
-    projectList.appendChild(div);
-  });
-
-  loadMoreBtn.style.display = "none"; // hide button after loading
-});
-</script>
-<script src="script.js"></script>
-
-
+  <script src="script.js"></script>
 
 </body>
 </html>
