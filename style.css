@@ -515,81 +515,107 @@ body {
 
 
 
-
-/* ---------------- Tablet View ---------------- */
-@media(min-width: 600px) and (max-width: 1023px) {
-  .container { flex-wrap: wrap; }
-  .left-column, .right-column { flex: 1 1 100%; }
-  .projects { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* ---------------- Mobile View ---------------- */
+/* ---------------- Mobile View (Phantom Override) ---------------- */
 @media (max-width: 599px) {
 
-   .container {
-    display: flex;
-    flex-direction: column;
+  /* Force your layout to override Phantom */
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
 
-    width: 100%;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
 
-    margin: 0;
-    padding: 10px;
+    margin: 0 !important;
+    padding: 10px !important;
 
     box-sizing: border-box;
     overflow-x: hidden;
 
-    align-items: stretch; /* IMPORTANT FIX */
+    align-items: stretch !important;
   }
 
-
+  /* Make sure both columns stay visible */
   .left-column,
   .right-column {
-    width: 100%;
-    flex: none;
-    margin: 0;
+    width: 100% !important;
+    flex: none !important;
+    margin: 0 !important;
+    display: block !important;
   }
 
+  /* Fix shrinking caused by Phantom's .image rules */
   .left-column img {
-    width: 100px;
-    height: 100px;
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
   }
 
+  /* Fix Phantom tile grid */
   .projects {
-    grid-template-columns: 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem;
   }
 
   .project {
-    padding: 12px;
+    padding: 12px !important;
   }
 
   .project-img,
   .project-img-arcpy {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
   }
 
+  /* Contact icons */
   .contact-icons a {
-    font-size: 1.3em;
-  }
-}
-/* Mobile View Navbar Fix */
-@media (max-width: 599px) {
-  .navbar ul {
-    display: flex;
-    justify-content: flex-start; /* align items to left */
-    padding: 0 10px; /* small horizontal padding */
-    margin: 0;
-    overflow-x: auto; /* horizontal scroll if needed */
-    -webkit-overflow-scrolling: touch; /* smooth scrolling */
-    gap: 10px; /* spacing between items */
+    font-size: 1.3em !important;
   }
 
-  .navbar li {
-    white-space: nowrap; /* prevent text from wrapping */
-    flex: 0 0 auto; /* keep items from shrinking */
+  /* Navbar fix (Phantom uses #nav, not .navbar) */
+  #nav ul {
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    gap: 10px;
+  }
+
+  #nav li {
+    white-space: nowrap;
+    flex: 0 0 auto;
   }
 }
+@media (max-width: 599px) {
+  .container {
+    padding: 15px 20px !important; /* top/bottom 15px, left/right 20px */
+  }
+
+  .left-column,
+  .right-column {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding: 20px 25px !important;
+  }
+}
+
+@media (max-width: 599px) {
+  #footer .inner {
+    padding: 20px !important; /* equal padding on all sides */
+    text-align: center; /* optional: centers footer content */
+  }
+
+  /* If you want the icons centered too */
+  #footer .contact-icons {
+    justify-content: center !important;
+  }
+}
+
 
 
 
